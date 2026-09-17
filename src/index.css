@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@keyframes carousel-scroll {
+  from {
+    transform:translateX(0);
+  }
+  to {
+    transform:translateX(-50%);
+  }
+}
+
+.carousel-track {
+  animation: carousel-scroll 25s linear infinite;
+}
+
+.carousel-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+}
+
+.carousel-mask:hover .carousel-track {
+  animation-play-state: paused;
+}

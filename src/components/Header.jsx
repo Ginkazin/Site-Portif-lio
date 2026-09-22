@@ -1,5 +1,5 @@
 import { Mail, FileText } from 'lucide-react'
-import { FaGithub, FaWhatsapp, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import logo from '../assets/logo.jpeg'
 
 
@@ -33,6 +33,15 @@ function Header() {
         >
           <FaGithub size={18} />
         </a>
+
+        <a 
+
+          href="https://www.linkedin.com/in/joãogabriel-raupp?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank"
+          rel="noreferrer"  
+          className="flex h-9 w-9 items-center justify-center rounded-full border border-violet-500/10 text-violet-400 transition hover:border-violet-500/30 hover:bg-violet-500/5 hover:text-violet-300"
+
+          ><FaLinkedin size={18} /></a>
 
         <a
           href="mailto:bielraupp.glob09@gmail.com"
